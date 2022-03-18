@@ -1,0 +1,535 @@
+body{
+    font-family: 'Euclid Circular B', sans-serif;
+    overflow-x: hidden;                                 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.header{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  float: left;
+  background-color: white;
+}
+.logo{
+  align-items: center;
+  margin-left: 204px; 
+  margin-top: 25px;
+  
+}
+.logo img{
+  width: 215px;
+}
+
+.menu{
+  width: 410px;
+  padding-top: 35px;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  margin-left: 150px;
+  display: flex;
+  float: inline-start;
+}
+
+.featbtn, .bldbtn, .abtbtn, .csbtn{
+   background-color: rgb(255, 255, 255);
+   width: 100px;
+   height: 30px;
+   color: 333333;
+   border: none;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    padding: 0px 10px;
+    margin: 10px;
+    width:fit-content ;
+    line-height: 3;
+    height:fit-content;
+    background-color: white ;
+    border: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888888;
+}
+
+.dropdown a{
+  text-decoration: none;
+  color: black;
+}
+.menu button{
+  font-family:'Euclid Circular B', sans-serif;
+  font-size: 17px;
+}
+
+.menu button:hover{
+color: #1c7eda;
+}
+
+.dropdown a:hover{
+  color: #1c7eda;
+}
+.menu :hover .dropdown{
+    display: block;
+}
+
+.downlb{
+  width: 100px;
+  background: transparent;
+  align-self: right;
+}
+
+.download{
+color: white;
+background: #0D70CA;
+font-family: 'Euclid Circular B', sans-serif;
+font-size: medium;
+font-weight: lighter;
+border: none;
+width: 140px;
+height: 40px;
+border-radius: 30px;
+margin-top: 25px;
+margin-right: 203px;
+margin-left: 20px;
+}
+
+.downlb a :hover{
+  background: #304ed6;
+  cursor: pointer;
+}
+
+.intro{
+  background: white;
+  width: 100%;
+  height: 500px;
+  float: left;
+}
+
+.left{
+  width: 500px;
+  height: 440px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 204px;
+  padding-top: 210px;
+  color: #333333;
+  float: left;
+}
+
+.left h1{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.05;
+}
+
+.right{
+  width: 560px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 150px;
+}
+
+.right img{
+  width: 480px;
+}
+
+.downnow{
+  width: 100px;
+  align-self: right;
+}
+
+.downloadnow{
+color: white;
+background: #0D70CA;
+font-family: 'Euclid Circular B', sans-serif;
+font-size: large;
+font-weight: lighter;
+border: none;
+width: 180px;
+height: 50px;
+border-radius: 30px;
+margin-top: 39px;
+margin-right: 20px;
+margin-left: 0px;
+}
+
+.downnow a :hover{
+  background: #304ed6;
+  cursor: pointer;
+}
+
+.learnmore{
+  float: left;
+  margin-top: 100px;
+  height: 65px;
+  width: 100%;
+  font-size: smaller;
+  text-align: center;
+}
+
+.use{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 500px;
+  float: left;
+
+}
+
+.useleft{
+  width: 500px;
+  height: 440px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 204px;
+  padding-top: 100px;
+  color: #333333;
+  float: left;
+}
+
+.useleft h1{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.05;
+}
+.useleft p{
+  font-family: 'Euclid Circular B', sans-serif;
+  line-height: 1.5;
+}
+
+.useright{
+  width: 560px;
+  float: left;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.useright img{
+  width: 400px;
+}
+
+.app{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+
+.appright{
+  width: 500px;
+  height: 440px;
+  padding-left: 0px;
+  padding-top: 100px;
+  color: #333333;
+  float: left;
+}
+
+.appright h1{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.05;
+}
+.appright p{
+  font-family: 'Euclid Circular B', sans-serif;
+  line-height: 1.5;
+}
+
+.appleft{
+  width: 560px;
+  float: left;
+  padding-left: 250px;
+  padding-top: 0px;
+}
+
+.appleft img{
+  width: 450px;
+}
+
+.data{
+  width: 100%;
+  height: 450px;
+  float: left;
+}
+
+.dataleft{
+  width: 500px;
+  height: 440px;
+  padding-left: 204px;
+  padding-top: 70px;
+  color: #333333;
+  float: left;
+  
+}
+
+.dataleft h1{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.05;
+}
+.dataleft p{
+  font-family: 'Euclid Circular B', sans-serif;
+  line-height: 1.5;
+}
+
+.dataright{
+  width: 560px;
+  float: left;
+  margin-left: -90px;
+}
+
+.dataright img{
+  width: 550px;
+}
+
+.start{
+  background-color: #24292E;
+  width: 100%;
+  height: 450px;
+  float: left;
+}
+.fox img{
+  width: 14%;
+}
+
+.getstarted{
+  float: left;
+  color: white;
+  margin-top: 40px;
+  height: 70px;
+  width: 100%;
+  font-size: x-small;
+  text-align: center;
+}
+
+.downtoday{
+  width: 100px;
+}
+
+.downloadtoday{
+color: white;
+background: #0D70CA;
+font-family: 'Euclid Circular B', sans-serif;
+font-size: small;
+font-weight: lighter;
+border: none;
+width: 220px;
+height: 50px;
+border-radius: 30px;
+margin-left: 566px;
+}
+
+.downtoday a :hover{
+  background: #304ed6;
+  cursor: pointer;
+}
+
+.fox{
+  width: 100%;
+  padding-left: 580px;
+  padding-top: 60px; 
+}
+
+.mmv{
+  width: 100%;
+  height: 735px;
+  float: left;
+}
+
+.what{
+  width: 100%;
+  text-align: center;
+  padding-top: 96px;
+  color: #333333;
+  font-size: smaller;
+}
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+.v{
+  border-radius: 15px;
+}
+
+.dapp{
+  float: left;
+  width: 100%;
+  background: #F7F9FB;
+}
+
+.text{
+  float: left;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.dapp img{
+  width: 18%
+}
+
+.r1{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.r2{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.developers{
+  float: left;
+  background-color: #24292E;
+  width: 100%;
+  height: 520px;
+  color: white;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.developers a{
+  text-decoration: none;
+  color: white;
+}
+
+.developers a:hover{
+  color: #0D70CA;
+  cursor: pointer;
+}
+
+.shop{
+  background: rgb(106,115,125);
+  color: white;
+  width: 100%;
+  height: 475px;
+  display: inline-flex;  
+}
+
+.hood{
+  float: left;
+  width:40%;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+.shoplink{
+  float: left;
+  padding-top: 220px;
+  margin-left: -100px;
+}
+
+.shopbtn{
+  color: white;
+  background: transparent;
+  font-family: 'Euclid Circular B', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+   width: 140px;
+  height: 40px;
+  border-radius: 30px;
+  }
+
+  .hood img{
+   width: 70%
+  }
+
+  .shopbtn:hover{
+    color: #0D70CA;
+    border-color: #0D70CA;
+    cursor: pointer;
+  }
+.subcription{
+  width: 100%;
+  height: 300px;
+}
+.subs{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+  float: left;
+  }
+
+  .signup{
+    float: left;
+    width: 100px;
+    padding-left: 600px;  
+  }
+  
+  .sign{
+  color: white;
+  background: #0D70CA;
+  font-family: 'Euclid Circular B', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  margin-left: 20px;
+  }
+
+  .sign:hover{
+    background-color: #304ed6;
+    cursor: pointer;
+  }
+
+  footer{
+    width: 100%;
+    height: 400px;
+    background: #E9EBEE;
+    padding-left: 200px;
+    padding-top: 60px;
+    color: #2b2b2b;
+    font-size: small;
+  }
+
+  .logosmall:hover{
+    cursor: pointer;
+  }
+  .flinks{
+    width: 100%;
+    margin-left: -156px;
+    padding-top: 40px;
+    padding-bottom: 30px;;
+    color: #F6851B;
+    font-family: 'Euclid Circular B', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 30px;
+  }
+
+    footer ul{
+      list-style: none;
+    }
+
+    footer a{
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    footer a:hover{
+      color: #1c7eda;
+      cursor: pointer;
+    }
+
+    .disclaimer{
+      float: left;
+    }
+
+    .flinks h4{
+      font-weight: lighter;
+      font-size: 18px;
+      line-height: 3;
+    }
